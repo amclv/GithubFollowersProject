@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A248E572639E67D00FAD22A /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A248E562639E67D00FAD22A /* GFButton.swift */; };
+		1A248E5A2639EA5700FAD22A /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A248E592639EA5700FAD22A /* GFTextField.swift */; };
 		1AC06F3B26392F3C0067D059 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC06F3A26392F3C0067D059 /* AppDelegate.swift */; };
 		1AC06F3D26392F3C0067D059 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC06F3C26392F3C0067D059 /* SceneDelegate.swift */; };
 		1AC06F4426392F3E0067D059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AC06F4326392F3E0067D059 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A248E562639E67D00FAD22A /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		1A248E592639EA5700FAD22A /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		1AC06F3726392F3C0067D059 /* GithubFollowersProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubFollowersProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC06F3A26392F3C0067D059 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AC06F3C26392F3C0067D059 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,15 +60,25 @@
 		1AC06F3926392F3C0067D059 /* GithubFollowersProject */ = {
 			isa = PBXGroup;
 			children = (
+				1AC06F592639E64E0067D059 /* Resources */,
+				1AC06F532639CE390067D059 /* SearchViewController.swift */,
+				1AC06F562639CE550067D059 /* FavoriteListViewController.swift */,
+				1A248E562639E67D00FAD22A /* GFButton.swift */,
+				1A248E592639EA5700FAD22A /* GFTextField.swift */,
+			);
+			path = GithubFollowersProject;
+			sourceTree = "<group>";
+		};
+		1AC06F592639E64E0067D059 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1AC06F3A26392F3C0067D059 /* AppDelegate.swift */,
 				1AC06F3C26392F3C0067D059 /* SceneDelegate.swift */,
 				1AC06F4326392F3E0067D059 /* Assets.xcassets */,
 				1AC06F4526392F3E0067D059 /* LaunchScreen.storyboard */,
 				1AC06F4826392F3E0067D059 /* Info.plist */,
-				1AC06F532639CE390067D059 /* SearchViewController.swift */,
-				1AC06F562639CE550067D059 /* FavoriteListViewController.swift */,
 			);
-			path = GithubFollowersProject;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +150,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A248E5A2639EA5700FAD22A /* GFTextField.swift in Sources */,
 				1AC06F572639CE550067D059 /* FavoriteListViewController.swift in Sources */,
+				1A248E572639E67D00FAD22A /* GFButton.swift in Sources */,
 				1AC06F542639CE390067D059 /* SearchViewController.swift in Sources */,
 				1AC06F3B26392F3C0067D059 /* AppDelegate.swift in Sources */,
 				1AC06F3D26392F3C0067D059 /* SceneDelegate.swift in Sources */,
@@ -280,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G4A2JWWKQ;
-				INFOPLIST_FILE = GithubFollowersProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GithubFollowersProject/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7G4A2JWWKQ;
-				INFOPLIST_FILE = GithubFollowersProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GithubFollowersProject/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
