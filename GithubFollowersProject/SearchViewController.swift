@@ -9,6 +9,9 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    private let standardPadding: CGFloat = 50
+    private let standardHeight: CGFloat = 50
+    
     let logoImageView = UIImageView()
     let userNameTextField = GFTextField()
     let callToActionButton = GFButton(backgroundColor: .systemGreen, title: "Get Followers")
@@ -75,10 +78,10 @@ extension SearchViewController {
         
         view.addSubview(userNameTextField)
         NSLayoutConstraint.activate([
-            userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
-            userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            userNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            userNameTextField.heightAnchor.constraint(equalToConstant: 50)
+            userNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: standardPadding),
+            userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: standardPadding),
+            userNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -standardPadding),
+            userNameTextField.heightAnchor.constraint(equalToConstant: standardHeight)
         ])
     }
     
@@ -88,10 +91,10 @@ extension SearchViewController {
         
         view.addSubview(callToActionButton)
         NSLayoutConstraint.activate([
-            callToActionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-            callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -50),
-            callToActionButton.heightAnchor.constraint(equalToConstant: 50)
+            callToActionButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: standardPadding),
+            callToActionButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -standardPadding),
+            callToActionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -standardPadding),
+            callToActionButton.heightAnchor.constraint(equalToConstant: standardHeight)
         ])
     }
 }
