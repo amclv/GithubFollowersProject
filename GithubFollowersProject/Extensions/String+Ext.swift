@@ -1,5 +1,5 @@
 //
-//  String+Extension.swift
+//  String+Ext.swift
 //  GithubFollowersProject
 //
 //  Created by Aaron Cleveland on 4/28/21.
