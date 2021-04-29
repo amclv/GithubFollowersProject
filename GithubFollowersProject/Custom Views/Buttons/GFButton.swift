@@ -30,7 +30,7 @@ class GFButton: UIButton {
     // Configure will only be available to this class GFButton
     private func configure() {
         layer.cornerRadius = 10
-        titleLabel?.textColor = .white
+        // setTitleColor(.white, for: .normal) ; You do not need to set this as the default color for button is white.
         titleLabel?.font = .preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
     }
